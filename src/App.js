@@ -1,5 +1,5 @@
 import './App.css';
-// import About from './components/About';
+import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import React, { useState } from 'react'
@@ -43,15 +43,14 @@ function App() {
         <Alert alert={alert} />
         <div className="container my-3">
           {/* <Routes>
-            <Route exact path="/about">
-              <About />
-            </Route>
+            <Route exact path="/about"><About /></Route>
             <Route exact path="/"> */}
-              <TextForm showAlert={showAlert} heading="Enter the Text Analyze below" mode={mode} />
+              <TextForm showAlert={showAlert} heading="Try Textutils - Word Counter, Character Counter, Remove Extra Spaces" mode={mode} />
             {/* </Route> */}
           {/* </Routes>  */}
         </div>
       {/* </Router> */}
+      <About mode={mode}/>
     </>
   )
 }
